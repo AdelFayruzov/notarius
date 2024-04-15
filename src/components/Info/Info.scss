@@ -1,0 +1,45 @@
+@import "../../styles/variables/media-quaries";
+
+.info {
+  background-color: var(--color-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font: var(--font-xl);
+  justify-content: center;
+  font-weight: 700;
+  padding: 20px 40px;
+  color: white;
+
+  &__content {
+    display: flex;
+    font: var(--font-l);
+    flex-direction: row;
+    font-weight: 400;
+    gap: 120px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablet-max {
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    span {
+      padding: 20px;
+      max-width: 300px;
+    }
+  }
+
+  .divider {
+    height: 150px;
+    @include tablet-max {
+      height: 0;
+      width: 150px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.tarifs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-1);
+  font: var(--font-xl);
+  border-top: 2px solid var(--color-2);
+  padding: 40px;
+  font-weight: 700;
+
+  button {
+    font: var(--font-xl);
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../styles/variables/media-quaries";
+
+.address {
+  display: flex;
+  gap: 80px;
+  padding: 20px 80px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font: var(--font-m);
+  color: white;
+  background-color: var(--color-1);
+
+  @include tablet-max {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+    align-items: flex-start;
+  }
+
+  &__container {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    white-space: pre-wrap;
+    font: var(--font-m);
+    color: white;
+  }
+
+  a::before {
+    background-color: var(--color-2);
+  }
+
+  a:hover {
+    color: var(--color-2);
+  }
+
+  svg {
+    fill: var(--color-3);
+  }
+
+  &__time {
+    display: flex;
+    flex-direction: column;
+  }
+}

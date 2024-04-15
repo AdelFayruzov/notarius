@@ -1,0 +1,17 @@
+button {
+  cursor: pointer;
+  background-color: var(--color-3);
+  color: white;
+  border: none;
+  font: var(--font-m);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
+  outline: none;
+  transition: 0.3s;
+  padding: 6px 16px;
+
+  &:hover {
+    background-color: var(--color-1);
+  }
+}

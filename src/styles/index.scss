@@ -1,0 +1,73 @@
+@import "variables/global";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: #000000;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+input,
+textarea,
+select {
+  margin: 0;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.app-wrapper {
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid lightblue;
+  border-right-color: orange;
+  animation: l2 1s infinite linear;
+}
+
+@keyframes l2 {
+  to {
+    transform: rotate(1turn)
+  }
+}

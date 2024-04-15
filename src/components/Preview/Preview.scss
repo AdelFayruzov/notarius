@@ -1,0 +1,45 @@
+@import "../../styles/variables/media-quaries";
+
+.preview {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-1);
+
+
+  video {
+    display: block;
+    width: 100%;
+    opacity: 0.5;
+    height: 650px;
+    object-fit: cover;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font: var(--font-xxl);
+    font-weight: 800;
+    align-items: center;
+    max-width: 700px;
+    text-align: center;
+    position: absolute;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @include tablet-max {
+      font: var(--font-xl);
+    }
+
+    &__name {
+      font-weight: 600;
+    }
+
+    svg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
